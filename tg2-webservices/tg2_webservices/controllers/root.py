@@ -4,10 +4,11 @@
 from tg import expose, flash, require, url, request, redirect
 from pylons.i18n import ugettext as _, lazy_ugettext as l_
 
+from tg2_webservices.model.post import Post
 from tg2_webservices.lib.base import BaseController
 from tg2_webservices.model import DBSession, metadata
 from tg2_webservices.controllers.error import ErrorController
-
+from tg2_webservices.controllers.editor_controller import ManagePostsController
 __all__ = ['RootController']
 
 
@@ -27,7 +28,8 @@ class RootController(BaseController):
     """
 
     error = ErrorController()
-
+    edit_posts = ManagePostsController(Post)
+    
     @expose('tg2_webservices.templates.index')
     def index(self):
         """Handle the front-page."""
