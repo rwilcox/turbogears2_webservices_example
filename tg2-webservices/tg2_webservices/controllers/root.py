@@ -9,7 +9,10 @@ from tg2_webservices.lib.base import BaseController
 from tg2_webservices.model import DBSession, metadata
 from tg2_webservices.controllers.error import ErrorController
 from tg2_webservices.controllers.editor_controller import ManagePostsController
+from tg2_webservices.controllers.api_controller import APIController
+
 __all__ = ['RootController']
+
 
 
 class RootController(BaseController):
@@ -29,7 +32,8 @@ class RootController(BaseController):
 
     error = ErrorController()
     edit_posts = ManagePostsController(DBSession)
-    
+    api = APIController()
+
     @expose('tg2_webservices.templates.index')
     def index(self):
         """Handle the front-page."""
