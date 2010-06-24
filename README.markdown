@@ -27,6 +27,14 @@ For those of you new to Turbogears, the philosophy is simple:
     
 For more info, see the [Turbogears 2 Article on Content Types and Request Extensions](http://turbogears.org/2.0/docs//main/ResponseTypes.html)
 
+Where does the code for the api/ "route" live?
+================================
+
+tg2-webservices/controllers/api\_controller.py. (It's mapped to /api/ in
+tg2-webservices/controllers/root.py)
+
+Templates for api\_controller live in tg2-webservices/templates/api_controller/
+
 Install Turbogears
 =============================
 
@@ -40,7 +48,7 @@ Doing it yourself
      -e 'hg+http://bitbucket.org/turbogears/tgdevtools-dev/@2.1b2#egg=tg.devtools'
 
 
-Letting me do it from a frozen requirements file
+Letting me do it for you, from a frozen requirements file
 -------------------------
 
     $ pip install -E tg2env -r tg2-webservices/requirements.txt
