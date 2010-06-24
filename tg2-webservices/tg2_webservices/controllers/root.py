@@ -28,7 +28,7 @@ class RootController(BaseController):
     """
 
     error = ErrorController()
-    edit_posts = ManagePostsController(Post)
+    edit_posts = ManagePostsController(DBSession)
     
     @expose('tg2_webservices.templates.index')
     def index(self):
