@@ -9,14 +9,7 @@ This is a simple blog application, which will show off the web services applicat
 
 To install, I recommend using pip and virtualenv.
 
-  1. Install Turbogears 2.1b2
-  
-    pip install -E tg2env\
-    
-     -e 'hg+http://bitbucket.org/turbogears/tg-dev/@2.1b2#egg=TurboGears2'\
-    
-     -e 'hg+http://bitbucket.org/turbogears/tgdevtools-dev/@2.1b2#egg=tg.devtools'
-    
+  1. Install Turbogears 2.1b2. See Section Below
   2. `source tg2env/bin/activate` - activate the virtualenv
   3. `paster quickstart my_wonderful_app`, which will setup the database structure etc
   4. Visit http://127.0.0.1:8080/edit_posts/ to add posts
@@ -33,3 +26,21 @@ For those of you new to Turbogears, the philosophy is simple:
     values and then returns the filled template output to the browser.
     
 For more info, see the [Turbogears 2 Article on Content Types and Request Extensions](http://turbogears.org/2.0/docs//main/ResponseTypes.html)
+
+Install Turbogears
+=============================
+
+Doing it yourself
+-------------------------
+
+    $ pip install -E tg2env\
+    
+     -e 'hg+http://bitbucket.org/turbogears/tg-dev/@2.1b2#egg=TurboGears2'\
+    
+     -e 'hg+http://bitbucket.org/turbogears/tgdevtools-dev/@2.1b2#egg=tg.devtools'
+
+
+Letting me do it from a frozen requirements file
+-------------------------
+
+    $ pip install -E tg2env -r tg2-webservices/requirements.txt
