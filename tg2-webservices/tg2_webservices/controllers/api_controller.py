@@ -16,6 +16,9 @@ class APIController(BaseController):
         @expose('json', exclude_names='d')
         @expose('tg2_webservices.templates.api.get_html',
                 content_type='text/html')
+                
+        @ ^^^^^ notice how we output a different template in those cases?
+        
         @expose('tg2_webservices.templates.api.get_xml',
                 content_type='text/xml', custom_format='special_xml')
         

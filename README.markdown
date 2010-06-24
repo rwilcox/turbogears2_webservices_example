@@ -13,9 +13,9 @@ To install, I recommend using pip and virtualenv.
   
     pip install -E tg2env\
     
-    -e 'hg+http://bitbucket.org/turbogears/tg-dev/@2.1b2#egg=TurboGears2'\
+     -e 'hg+http://bitbucket.org/turbogears/tg-dev/@2.1b2#egg=TurboGears2'\
     
-    -e 'hg+http://bitbucket.org/turbogears/tgdevtools-dev/@2.1b2#egg=tg.devtools'
+     -e 'hg+http://bitbucket.org/turbogears/tgdevtools-dev/@2.1b2#egg=tg.devtools'
     
   2. `source tg2env/bin/activate` - activate the virtualenv
   3. `paster quickstart my_wonderful_app`, which will setup the database structure etc
