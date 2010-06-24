@@ -8,7 +8,7 @@
 
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
-<title>Hey world!</title>
+<title>Getting '${post.title}', (Post id ${post.id})</title>
 </head>
 
 <body>
@@ -22,5 +22,13 @@
   {greeting('world')}
   <p>If you put a $ in front of the line above the template will complain, because development.ini turns off allow_exec</p>
 </div>
+
+<div>
+  <h1>Post info</h1>
+  <p><span style="font-style: italic; padding-bottom: 3em">Title:</span> ${post.title}</p>
+  <p><span style="font-style: italic; padding-bottom: 3em">Summary:</span> ${post.summary}</p>
+  <p><span style="font-style: italic">Body: </span>${post.body_text}</p>
+</div>
+
 </body>
 </html>

@@ -20,4 +20,4 @@ To install, I recommend using pip and virtualenv.
   2. `source tg2env/bin/activate` - activate the virtualenv
   3. `paster quickstart my_wonderful_app`, which will setup the database structure etc
   4. Visit http://127.0.0.1:8080/edit_posts/ to add posts
-
+  5. Visit http://127.0.0.1:8080/api/get/1 (or any id you created) to see post info
