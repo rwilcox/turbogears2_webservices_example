@@ -1,0 +1,4 @@
+recursive-include tg2_webservices/public *
+include tg2_webservices/public/favicon.ico
+recursive-include tg2_webservices/i18n *
+recursive-include tg2_webservices/templates *

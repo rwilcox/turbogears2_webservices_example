@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""Sample controller module"""
+
+# turbogears imports
+from tg import expose
+#from tg import redirect, validate, flash
+
+# third party imports
+#from pylons.i18n import ugettext as _
+#from repoze.what import predicates
+
+# project specific imports
+from tg2_webservices.lib.base import BaseController
+#from tg2_webservices.model import DBSession, metadata
+
+
+class SampleController(BaseController):
+    
+    @expose('tg2_webservices.templates.index')
+    def index(self):
+        return dict(page='index')
