@@ -25,6 +25,8 @@ class APIController(BaseController):
         But we know that, wither the dictionary is rendered through a template
         engine, or JSON, that it provides the data required for the view.
         
+        Also for more info as to what's going on here, read:
+        <http://www.turbogears.org/2.1/docs/main/ResponseTypes.html#per-request>
         """
         post = DBSession.query(Post).filter_by(id = post_id).first()
         
