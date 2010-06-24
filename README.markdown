@@ -21,3 +21,15 @@ To install, I recommend using pip and virtualenv.
   3. `paster quickstart my_wonderful_app`, which will setup the database structure etc
   4. Visit http://127.0.0.1:8080/edit_posts/ to add posts
   5. Visit http://127.0.0.1:8080/api/get/1 (or any id you created) to see post info
+  6. Visit http://127.0.0.1:8080/api/get/1.json to get JSON back
+
+For those of you new to Turbogears, the philosophy is simple:
+    
+    Expose + Template == Good
+    To enable a cleaner solution, data from your TurboGears actions can be
+    returned as strings, or as a dictionary.
+    
+    ... the  template which fills in its placeholder keys with the dictionary
+    values and then returns the filled template output to the browser.
+    
+For more info, see the [Turbogears 2 Article on Content Types and Request Extensions](http://turbogears.org/2.0/docs//main/ResponseTypes.html)
