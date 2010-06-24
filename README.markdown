@@ -23,7 +23,8 @@ For those of you new to Turbogears, the philosophy is simple:
     returned as strings, or as a dictionary.
     
     ... the  template which fills in its placeholder keys with the dictionary
-    values and then returns the filled template output to the browser.
+    values (returned by the controller action) and then returns the filled
+    template output to the browser.
     
 For more info, see the [Turbogears 2 Article on Content Types and Request Extensions](http://turbogears.org/2.0/docs//main/ResponseTypes.html)
 
