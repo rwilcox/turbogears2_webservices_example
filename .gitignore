@@ -1,3 +1,4 @@
 *.pyc
 tg2env
-
+data/
+*.db
