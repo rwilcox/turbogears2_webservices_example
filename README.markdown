@@ -36,6 +36,12 @@ tg2-webservices/controllers/root.py)
 
 Templates for api\_controller live in tg2-webservices/templates/api_controller/
 
+TODO
+===============================
+
+  * show TGWebServices integrated into the app
+  * show tgext.xmlrpc integrated into the app
+
 Install Turbogears
 =============================
 
